@@ -24,7 +24,7 @@ body {
   margin: 0;
   font-family: "Arial", sans-serif; /* CHANGE */
   font-weight: 400; /* CHANGE */
-  background-color: #fff; /* CHANGE */
+  background: linear-gradient(#e66465, #9198e5); /* CHANGE */
 }
 
 img {
@@ -47,7 +47,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1320px; /* CHANGE */
+  max-width: 800px; /* CHANGE */
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
@@ -67,5 +67,59 @@ a {
 }
 /* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
 /************** MAIN STYLES START **************/
+
+.loading__wrapper {
+  margin-top: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.loadingbox {
+  margin-right: 5px;
+  width: 40px;
+  height: 80px;
+  background-color: #fff;
+  animation-name: box;
+  animation-timing-function: linear;
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite;
+  border-radius: 5px
+}
+
+@keyframes box {
+  0% {
+    transform: scaleY(1);
+    background-color: #E6E6FA;
+  }
+  /* 25%{
+    background-color: #;
+  } */
+  50% {
+    transform: scaleY(1.5);
+    background-color: #4B0082;
+  }  
+  100% {
+    transform: scaleY(1);
+    background-color: #E6E6FA;
+  } 
+}
+
+/* .box1{animation-delay: 100ms;} */
+.box2{animation-delay: 100ms;}
+.box3{animation-delay: 200ms;}
+.box4{animation-delay: 300ms;}
+.box5{animation-delay: 400ms;}
+/* .box1{animation-delay: 100ms;} */
+
+
+/* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+
+.box1 {
+  animation-delay: 0ms;
+}
 
 /************** MAIN STYLES END **************/
